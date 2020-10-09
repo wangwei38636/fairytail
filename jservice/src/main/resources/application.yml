@@ -1,0 +1,17 @@
+server:
+  port: 8201
+management:
+  endpoints:
+    web:
+      exposure:
+        include: nacos-discovery, nacos-config, metrics, info, health, env, hystrix.stream, prometheus, mappings
+spring:
+  cloud:
+    sentinel:
+      transport:
+        port: 8718
+        dashboard: localhost:9999
+
+feign:
+  sentinel:
+    enabled: true

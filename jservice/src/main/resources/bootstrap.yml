@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: jservice
+  profiles:
+    active: devlop
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: fairytail
+        file-extension: yml
+        refresh-enabled: true
+        group: DEFAULT_GROUP
