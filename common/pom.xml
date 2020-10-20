@@ -8,21 +8,12 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>org.fairytail</groupId>
-    <artifactId>util</artifactId>
-    <version>${local.dependency.version}</version>
-    <name>util</name>
+    <artifactId>common</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>common</name>
 
     <dependencies>
 
     </dependencies>
-
-<!--    <build>-->
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
-<!--            </plugin>-->
-<!--        </plugins>-->
-<!--    </build>-->
 
 </project>

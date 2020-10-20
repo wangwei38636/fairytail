@@ -1,0 +1,17 @@
+*.iml
+.idea/
+target/
+
+
+platform.api.iml
+platform/platform.api/platform.api.iml
+platform.api.iml
+
+platform.api.iml
+.iml
+
+log
+
+mvnw*
+mvn*
+.mvn*

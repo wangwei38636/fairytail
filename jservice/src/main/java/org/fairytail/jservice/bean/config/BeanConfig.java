@@ -8,10 +8,6 @@ import org.springframework.web.client.RestTemplate;
 
 @Configuration
 public class BeanConfig {
-//    @Bean
-//    public RestTemplate restTemplate() {
-//        return new RestTemplate();
-//    }
     @Bean
     @SentinelRestTemplate(blockHandler = "handleException", blockHandlerClass = ExceptionUtil.class)
     public RestTemplate restTemplate() {

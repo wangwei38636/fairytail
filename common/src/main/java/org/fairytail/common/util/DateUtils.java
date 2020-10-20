@@ -1,4 +1,4 @@
-package org.fairytail.util;
+package org.fairytail.common.util;
 
 public class DateUtils {
     public static void test(){

@@ -1,4 +1,4 @@
-package org.fairytail.util;
+package org.fairytail.common;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
