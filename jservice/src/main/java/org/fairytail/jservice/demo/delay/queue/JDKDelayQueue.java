@@ -8,22 +8,20 @@ import java.util.concurrent.DelayQueue;
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * JDK版延迟队列
+ */
 public class JDKDelayQueue {
 
     public static void main(String[] args) throws InterruptedException {
-        DelayQueue<DelayItem> delayQueue = new DelayQueue<DelayItem>();
-
-
-        Date date1 = DateUtils.parseDate("2020-10-16 14:06:00");
-        Date date2 = DateUtils.parseDate("2020-10-16 14:06:10");
-        Date date3 = DateUtils.parseDate("2020-10-16 14:06:20");
-
+        DelayQueue<DelayItem> delayQueue = new DelayQueue<>();
+        Date now = new Date();
         // 20s后
-        delayQueue.add(new DelayItem(date1.getTime(), "aaaaaa"));
+        delayQueue.add(new DelayItem(DateUtils.addSeconds(now, 20).getTime(), "aaaaaa"));
         // 10秒后
-        delayQueue.add(new DelayItem(date3.getTime(), "bbbbbb"));
+        delayQueue.add(new DelayItem(DateUtils.addSeconds(now, 20).getTime(), "bbbbbb"));
         // 30秒后
-        delayQueue.add(new DelayItem(date2.getTime(), "cccccc"));
+        delayQueue.add(new DelayItem(DateUtils.addSeconds(now, 20).getTime(), "cccccc"));
 
         while (0 < delayQueue.size()) {
             Thread.sleep(1000);

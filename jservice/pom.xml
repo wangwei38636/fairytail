@@ -56,8 +56,8 @@
         <!--本地依赖-->
         <dependency>
             <groupId>org.fairytail</groupId>
-            <artifactId>util</artifactId>
-            <version>${local.dependency.version}</version>
+            <artifactId>common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
