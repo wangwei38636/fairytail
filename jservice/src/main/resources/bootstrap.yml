@@ -11,3 +11,7 @@ spring:
         file-extension: yml
         refresh-enabled: true
         group: DEFAULT_GROUP
+
+fairy:
+  tail:
+    log-path: /Users/zl/logs

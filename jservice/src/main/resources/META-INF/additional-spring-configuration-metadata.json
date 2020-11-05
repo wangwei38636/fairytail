@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "fairy.tail.log-path",
+      "type": "java.lang.String",
+      "description": "for logback."
+    }
+  ]
+}
