@@ -13,6 +13,12 @@
     <description>jservice</description>
 
     <dependencies>
+        <!--swagger-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>3.0.0</version>
+        </dependency>
         <!--redis-->
         <dependency>
             <groupId>org.springframework.data</groupId>
@@ -21,7 +27,6 @@
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
-<!--            <version>3.3.0</version>-->
         </dependency>
         <!--OpenFeign支持-->
         <dependency>
@@ -32,7 +37,6 @@
         <dependency>
             <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-transport-simple-http</artifactId>
-            <!--            <version>1.8.0</version>-->
         </dependency>
         <!--sentinel熔断器、监控-->
         <dependency>

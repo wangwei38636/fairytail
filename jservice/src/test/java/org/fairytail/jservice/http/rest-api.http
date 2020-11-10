@@ -1,39 +1,8 @@
-#拍卖纪录接口
-GET http://gw.tebaobao.vip/prod-jservice/service/auction/recordList
-Cookie: JSESSIONID=DC857513178EE869D6F13BB71D0773AB
-Content-Type: multipart/form-data; boundary=WebAppBoundary
-
---WebAppBoundary
-Content-Disposition: form-data; name="goodsId"
-
-1225632
---WebAppBoundary
-Content-Disposition: form-data; name="pageNum"
-
-0
---WebAppBoundary
-Content-Disposition: form-data; name="pageSize"
-
-10
---WebAppBoundary--
+GET {{jservice}}/api-docs
 
 ###
-
-
-# curl --location --request POST 'http://gw.tebaobao.vip/prod-jservice/service/rank/invitation'
-#--form 'tbb_user_token=5fbc9ba0a163c6cc93a7ee4eb443c0a3'
-POST http://gw.tebaobao.vip/prod-jservice/service/rank/invitation
-Content-Type: multipart/form-data; boundary=WebAppBoundary
-
---WebAppBoundary
-Content-Disposition: form-data; name="tbb_user_token"
-
-5fbc9ba0a163c6cc93a7ee4eb443c0a3
---WebAppBoundary--
-
-###
-
 GET {{es}}/_cat
 Authorization: Basic elastic changeme
+
 
 

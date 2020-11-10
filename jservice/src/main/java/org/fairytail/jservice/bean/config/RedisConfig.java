@@ -19,17 +19,5 @@ public class RedisConfig {
     public JedisConnectionFactory redisConnectionFactory() {
         return new JedisConnectionFactory();
     }
-//    @Bean
-//    public JedisConnectionFactory redisConnectionFactory() {
-//        RedisStandaloneConfiguration config = new RedisStandaloneConfiguration("server", 6379);
-//        return new JedisConnectionFactory(config);
-//    }
-//    @Bean
-//    public RedisConnectionFactory jedisConnectionFactory() {
-//        RedisSentinelConfiguration sentinelConfig = new RedisSentinelConfiguration()
-//                .master("mymaster")
-//                .sentinel("127.0.0.1", 26379)
-//                .sentinel("127.0.0.1", 26380);
-//        return new JedisConnectionFactory(sentinelConfig);
-//    }
+
 }
